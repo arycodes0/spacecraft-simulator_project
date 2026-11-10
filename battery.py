@@ -8,8 +8,3 @@ def check_battery(battery_percent: float) -> str:
     if 0 <= battery_percent <= LOW_BATTERY_PERCENT:
         return "LOW BATTERY"
     return ""
-
-if __name__ == "__main__":
-    percent = 30
-    alert = check_battery(percent)
-    print(f"Battery: {percent}%" + (f" | {alert}" if alert else ""))
